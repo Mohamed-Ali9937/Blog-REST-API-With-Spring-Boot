@@ -3,8 +3,6 @@ package com.myblog.entity;
 import java.util.Date;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -101,7 +99,6 @@ public class PostEntity {
 		this.creationDate = creationDate;
 	}
     
-	@JsonIgnore
 	public List<CommentEntity> getComments() {
 		return comments;
 	}
